@@ -48,7 +48,7 @@ const Hero = () => {
 
           {/* Nom et prénom */}
           <h2 className="text-white text-3xl md:text-4xl font-bold mb-4">
-            Mohamed El Amrani
+          Kaouthar El mansouri
           </h2>
 
           {/* Titre principal */}
