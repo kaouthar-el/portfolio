@@ -2,87 +2,105 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* Design System avec palette Rose & Gris 
+Toutes les couleurs sont en HSL pour une meilleure gestion
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 15%;
+    /* Couleurs de base - Mode clair */
+    --background: 0 0% 98%;
+    --foreground: 240 8% 20%;
 
     --card: 0 0% 100%;
-    --card-foreground: 240 10% 15%;
+    --card-foreground: 240 8% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 15%;
+    --popover-foreground: 240 8% 20%;
 
-    --primary: 142 76% 45%;
+    /* Rose comme couleur principale */
+    --primary: 330 81% 60%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 16% 90%;
-    --secondary-foreground: 240 10% 15%;
+    /* Gris pour le secondaire */
+    --secondary: 240 5% 88%;
+    --secondary-foreground: 240 8% 20%;
 
-    --muted: 210 15% 92%;
-    --muted-foreground: 240 5% 45%;
+    --muted: 240 4% 90%;
+    --muted-foreground: 240 4% 50%;
 
-    --accent: 152 65% 55%;
+    /* Rose accent plus clair */
+    --accent: 340 75% 70%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 13% 88%;
-    --input: 220 13% 88%;
-    --ring: 142 76% 45%;
+    --border: 240 6% 90%;
+    --input: 240 6% 90%;
+    --ring: 330 81% 60%;
 
     --radius: 0.75rem;
 
-    --gradient-primary: linear-gradient(135deg, hsl(142 76% 45%), hsl(152 65% 55%));
-    --gradient-accent: linear-gradient(135deg, hsl(142 76% 45%), hsl(210 16% 90%));
-    --gradient-hero: linear-gradient(135deg, hsl(220 15% 20%), hsl(142 40% 25%));
-    --gradient-card: linear-gradient(135deg, hsl(0 0% 100% / 0.05), hsl(0 0% 100% / 0.02));
+    /* Gradients Rose & Gris */
+    --gradient-primary: linear-gradient(135deg, hsl(330 81% 60%), hsl(340 75% 70%));
+    --gradient-accent: linear-gradient(135deg, hsl(330 81% 60%), hsl(240 5% 88%));
+    --gradient-hero: linear-gradient(135deg, hsl(240 10% 25%), hsl(330 50% 40%));
+    --gradient-card: linear-gradient(135deg, hsl(330 81% 60% / 0.05), hsl(240 5% 88% / 0.05));
+    --gradient-rose-subtle: linear-gradient(135deg, hsl(340 100% 95%), hsl(330 100% 98%));
+    --gradient-grey-rose: linear-gradient(135deg, hsl(240 5% 85%), hsl(330 60% 85%));
     
-    --shadow-glow: 0 0 40px hsl(142 76% 45% / 0.3);
-    --shadow-card: 0 10px 30px -10px hsl(220 15% 20% / 0.1);
+    /* Ombres avec teinte rose */
+    --shadow-glow: 0 0 40px hsl(330 81% 60% / 0.3);
+    --shadow-card: 0 10px 30px -10px hsl(330 50% 50% / 0.15);
+    --shadow-soft: 0 4px 20px -4px hsl(240 10% 40% / 0.1);
   }
 
   .dark {
-    --background: 240 30% 8%;
+    /* Couleurs de base - Mode sombre */
+    --background: 240 15% 10%;
     --foreground: 0 0% 98%;
 
-    --card: 240 25% 12%;
+    --card: 240 12% 14%;
     --card-foreground: 0 0% 98%;
 
-    --popover: 240 25% 12%;
+    --popover: 240 12% 14%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 142 76% 45%;
+    /* Rose vif pour le mode sombre */
+    --primary: 330 81% 65%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 15% 25%;
+    /* Gris foncé pour le secondaire */
+    --secondary: 240 8% 22%;
     --secondary-foreground: 0 0% 98%;
 
-    --muted: 220 15% 22%;
-    --muted-foreground: 240 5% 65%;
+    --muted: 240 8% 20%;
+    --muted-foreground: 240 4% 65%;
 
-    --accent: 152 65% 55%;
-    --accent-foreground: 0 0% 100%;
+    /* Rose plus lumineux en mode sombre */
+    --accent: 340 85% 75%;
+    --accent-foreground: 240 15% 10%;
 
-    --destructive: 0 62% 50%;
+    --destructive: 0 72% 55%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 15% 25%;
-    --input: 220 15% 25%;
-    --ring: 142 76% 45%;
+    --border: 240 10% 22%;
+    --input: 240 10% 22%;
+    --ring: 330 81% 65%;
 
-    --gradient-primary: linear-gradient(135deg, hsl(142 76% 45%), hsl(152 65% 55%));
-    --gradient-accent: linear-gradient(135deg, hsl(142 76% 45%), hsl(210 16% 90%));
-    --gradient-hero: linear-gradient(135deg, hsl(220 15% 15%), hsl(142 40% 20%));
-    --gradient-card: linear-gradient(135deg, hsl(0 0% 100% / 0.05), hsl(0 0% 100% / 0.02));
+    /* Gradients optimisés pour le mode sombre */
+    --gradient-primary: linear-gradient(135deg, hsl(330 81% 65%), hsl(340 85% 75%));
+    --gradient-accent: linear-gradient(135deg, hsl(330 81% 65%), hsl(240 8% 35%));
+    --gradient-hero: linear-gradient(135deg, hsl(240 15% 12%), hsl(330 60% 25%));
+    --gradient-card: linear-gradient(135deg, hsl(330 81% 65% / 0.08), hsl(240 8% 20% / 0.05));
+    --gradient-rose-subtle: linear-gradient(135deg, hsl(340 60% 15%), hsl(330 50% 18%));
+    --gradient-grey-rose: linear-gradient(135deg, hsl(240 8% 25%), hsl(330 40% 30%));
     
-    --shadow-glow: 0 0 40px hsl(142 76% 45% / 0.4);
-    --shadow-card: 0 10px 30px -10px hsl(0 0% 0% / 0.3);
+    /* Ombres avec glow rose plus prononcé */
+    --shadow-glow: 0 0 50px hsl(330 81% 65% / 0.5);
+    --shadow-card: 0 10px 40px -10px hsl(330 70% 40% / 0.4);
+    --shadow-soft: 0 4px 20px -4px hsl(330 50% 30% / 0.3);
   }
 }
 
@@ -92,15 +110,34 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased;
   }
 
   html {
     scroll-behavior: smooth;
   }
+
+  /* Personnalisation de la scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-muted;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary/50 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary;
+  }
 }
 
 @layer utilities {
+  /* Utilitaires de gradient */
   .gradient-primary {
     background: var(--gradient-primary);
   }
@@ -117,6 +154,15 @@ All colors MUST be HSL.
     background: var(--gradient-card);
   }
 
+  .gradient-rose-subtle {
+    background: var(--gradient-rose-subtle);
+  }
+
+  .gradient-grey-rose {
+    background: var(--gradient-grey-rose);
+  }
+
+  /* Utilitaires d'ombre */
   .shadow-glow {
     box-shadow: var(--shadow-glow);
   }
@@ -125,10 +171,94 @@ All colors MUST be HSL.
     box-shadow: var(--shadow-card);
   }
 
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  /* Texte avec gradient */
   .text-gradient {
     background: var(--gradient-primary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+  }
+
+  .text-gradient-grey-rose {
+    background: var(--gradient-grey-rose);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Effets de glassmorphism */
+  .glass-effect {
+    @apply backdrop-blur-md bg-white/10 dark:bg-white/5;
+    border: 1px solid hsl(var(--border) / 0.5);
+  }
+
+  .glass-rose {
+    @apply backdrop-blur-md;
+    background: hsl(330 81% 60% / 0.1);
+    border: 1px solid hsl(330 81% 60% / 0.2);
+  }
+
+  /* Animations personnalisées */
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes glow {
+    from {
+      box-shadow: 0 0 20px hsl(330 81% 60% / 0.3);
+    }
+    to {
+      box-shadow: 0 0 40px hsl(330 81% 60% / 0.6);
+    }
+  }
+
+  /* Hover effects */
+  .hover-lift {
+    @apply transition-all duration-300;
+  }
+
+  .hover-lift:hover {
+    @apply -translate-y-1 shadow-glow;
+  }
+
+  /* Bordures avec gradient */
+  .border-gradient-rose {
+    border: 2px solid transparent;
+    background-image: 
+      linear-gradient(hsl(var(--background)), hsl(var(--background))),
+      var(--gradient-primary);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+  }
+}
+
+/* Composants personnalisés */
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-primary-foreground hover:bg-primary/90 
+           px-6 py-3 rounded-lg font-medium transition-all duration-300
+           shadow-card hover:shadow-glow hover:-translate-y-0.5;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-secondary-foreground hover:bg-secondary/80
+           px-6 py-3 rounded-lg font-medium transition-all duration-300
+           border border-border hover:border-primary/50;
+  }
+
+  .card-rose {
+    @apply bg-card rounded-xl p-6 shadow-card
+           border border-border hover:border-primary/30
+           transition-all duration-300 hover:shadow-glow;
+  }
+
+  .input-rose {
+    @apply bg-input border-border text-foreground
+           focus:border-primary focus:ring-2 focus:ring-primary/20
+           rounded-lg px-4 py-2 transition-all duration-300;
   }
 }
