@@ -4,41 +4,49 @@ import { Card } from "@/components/ui/card";
 const Experience = () => {
   const experiences = [
     {
-      title: "Développeur Full Stack Senior",
-      company: "Tech Innovate",
-      period: "2022 - Présent",
+      title: "Stage PFE",
+      company: "Présidence Moulay Ismaïl, Meknès",
+      period: "2023",
       description:
-        "Développement d'applications web et mobile complexes. Lead technique sur des projets critiques avec React, Node.js et React Native.",
+        "Participation au développement et à la maintenance de plusieurs sites web internes, notamment la création d’une page de maintenance et de modules simples pour la communication interne. Dans la partie réseaux et support technique, j’ai contribué à :",
       achievements: [
-        "Migration complète vers une architecture microservices",
-        "Amélioration des performances de 60%",
-        "Formation et mentorat de 5 développeurs juniors",
+        "Le formatage et la configuration de postes informatiques",
+        "Le câblage RJ45 et l’organisation du réseau local",
+        "L’installation et la configuration de systèmes Linux (Ubuntu)",
+        "Renforcement des compétences en développement web et maintenance informatique",
+        "Acquisition d’une bonne compréhension de l’infrastructure réseau en milieu professionnel",
       ],
     },
     {
-      title: "Développeur Mobile",
-      company: "Digital Solutions",
-      period: "2020 - 2022",
-      description:
-        "Création d'applications mobiles natives et cross-platform pour iOS et Android avec React Native et Flutter.",
-      achievements: [
-        "Développement de 8+ applications mobiles",
-        "4.8/5 étoiles moyenne sur les stores",
-        "Implémentation de CI/CD pour releases automatisées",
-      ],
-    },
+  title: "Développeur Mobile",
+  company: "Entreprise Jbel Ennour",
+  period: "Novembre 2024 - Présent",
+  description:
+    "Participation au développement d’applications mobiles innovantes avec Flutter et React Native au sein de l’entreprise Jbel Ennour. Cette expérience m’a permis de renforcer mes compétences en développement mobile et de travailler sur des projets concrets répondant aux besoins internes de l’entreprise.",
+  achievements: [
+    "Conception et développement d’applications mobiles facilitant la gestion interne",
+    "Création d’applications permettant la génération et la consultation de fichiers PDF",
+    "Contribution à l’optimisation des processus administratifs grâce à des solutions numériques",
+    "Apprentissage continu des bonnes pratiques de développement et de gestion de projet",
+    "Collaboration étroite avec l’équipe technique pour la mise en production des applications",
+  ],
+},
+
     {
-      title: "Développeur Web",
-      company: "StartUp Studio",
-      period: "2018 - 2020",
-      description:
-        "Développement frontend avec React et Vue.js. Collaboration étroite avec les équipes design et backend.",
-      achievements: [
-        "Refonte complète de 3 applications web",
-        "Réduction du temps de chargement de 40%",
-        "Mise en place de tests automatisés",
-      ],
-    },
+  title: "Développeur Web",
+  company: "Projets Personnels & Collaboratifs",
+  period: "2025 - 2026",
+  description:
+    "Réalisation de plusieurs sites web modernes et responsives en utilisant React et TypeScript. Ces projets m’ont permis de renforcer mes compétences en développement frontend et en conception d’interfaces utilisateur attractives et performantes.",
+  achievements: [
+    "Création d’un site web complet pour un fast-food avec interface de commande et menu interactif",
+    "Développement d’un site portfolio personnel pour présenter mes projets et compétences",
+    "Conception d’un site web élégant dédié à une marque de parfums",
+    "Utilisation avancée de React et TypeScript pour assurer performance et maintenabilité du code",
+    "Amélioration continue de l’expérience utilisateur à travers un design moderne et fluide",
+  ],
+},
+
   ];
 
   return (

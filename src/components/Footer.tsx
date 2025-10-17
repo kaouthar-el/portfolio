@@ -18,9 +18,8 @@ const Footer = () => {
       {/* 🔹 Contenu principal */}
       <div className="relative z-10 container mx-auto px-4">
         <p className="flex items-center justify-center gap-2 text-white/80 font-medium text-lg">
-          Créé avec{" "}
-          <Heart className="w-5 h-5 text-primary fill-primary animate-pulse" />{" "}
-          par <span className="text-gradient font-semibold">Kawtar El Mansouri</span> © {currentYear}
+         
+          <span className="text-gradient font-semibold">Kawtar El Mansouri</span> © {currentYear}
         </p>
         <p className="text-white/60 text-sm mt-3">
           Tous droits réservés

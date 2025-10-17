@@ -1,7 +1,7 @@
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroBg from "@/assets/hero-bg.jpg";
-import profilePhoto from "@/assets/ka.png";
+import profilePhoto from "@/assets/dev.jpeg";
 
 const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -37,7 +37,8 @@ const Hero = () => {
           <p className="text-primary font-semibold mb-2 tracking-wider uppercase text-sm md:text-base">
             Développeur Web & Mobile
           </p>
-           {/* Profile Photo */}
+
+          {/* Profile Photo */}
           <div className="mb-6 flex justify-center">
             <img
               src={profilePhoto}
@@ -48,7 +49,7 @@ const Hero = () => {
 
           {/* Nom et prénom */}
           <h2 className="text-white text-3xl md:text-4xl font-bold mb-4">
-          Kaouthar El mansouri
+            Kaouthar El Mansouri
           </h2>
 
           {/* Titre principal */}
@@ -85,7 +86,7 @@ const Hero = () => {
           {/* Liens sociaux */}
           <div className="flex gap-4 justify-center">
             <a
-              href="https://github.com"
+              href="https://github.com/kaouthar-el"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-white/10 backdrop-blur-sm text-white hover:bg-white/20 transition-all hover:scale-110"
@@ -93,7 +94,7 @@ const Hero = () => {
               <Github className="w-5 h-5" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/elmansouri-kaouthar-56585b260/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-white/10 backdrop-blur-sm text-white hover:bg-white/20 transition-all hover:scale-110"
@@ -101,7 +102,7 @@ const Hero = () => {
               <Linkedin className="w-5 h-5" />
             </a>
             <a
-              href="mailto:contact@example.com"
+              href="mailto:kaoutharelmansouri@gmail.com"
               className="p-3 rounded-full bg-white/10 backdrop-blur-sm text-white hover:bg-white/20 transition-all hover:scale-110"
             >
               <Mail className="w-5 h-5" />

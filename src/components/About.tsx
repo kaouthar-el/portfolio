@@ -42,7 +42,7 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div className="space-y-6 animate-fade-in-up">
               <p className="text-foreground/80 leading-relaxed">
-                Passionné par le développement depuis plusieurs années, je
+                Passionné par le développement, je
                 transforme des concepts en solutions digitales performantes et
                 esthétiques. Mon approche combine créativité technique et souci
                 du détail pour créer des expériences utilisateur exceptionnelles.

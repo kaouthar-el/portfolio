@@ -14,7 +14,7 @@ const Skills = () => {
       icon: Code2,
       title: "Frontend",
       color: "text-blue-500",
-      skills: ["React", "TypeScript", "Vue.js", "Next.js", "Tailwind CSS"],
+      skills: ["React", "TypeScript", "Vue.js", "Next.js", "Tailwind CSS","HTML5","CSS3"],
     },
     {
       icon: Smartphone,
@@ -26,26 +26,26 @@ const Skills = () => {
       icon: Database,
       title: "Backend",
       color: "text-green-500",
-      skills: ["Node.js", "Express", "PostgreSQL", "MongoDB", "GraphQL"],
+      skills: ["Node.js", "Express", "PostgreSQL", "MongoDB", "GraphQL","Laravel"],
     },
-    {
-      icon: Cloud,
-      title: "DevOps & Cloud",
-      color: "text-cyan-500",
-      skills: ["Docker", "AWS", "CI/CD", "Git"],
-    },
+    // {
+    //   icon: Cloud,
+    //   title: "DevOps & Cloud",
+    //   color: "text-cyan-500",
+    //   skills: ["Docker", "AWS", "CI/CD", "Git"],
+    // },
     {
       icon: Palette,
       title: "Design & UX",
       color: "text-pink-500",
       skills: ["Figma", "UI/UX Design", "Responsive Design", "Animations"],
     },
-    {
-      icon: Zap,
-      title: "Outils & Méthodologie",
-      color: "text-yellow-500",
-      skills: ["Agile/Scrum", "Testing", "Performance", "SEO"],
-    },
+    // {
+    //   icon: Zap,
+    //   title: "Outils & Méthodologie",
+    //   color: "text-yellow-500",
+    //   skills: ["Agile/Scrum", "Testing", "Performance", "SEO"],
+    // },
   ];
 
   return (
