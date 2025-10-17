@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Github, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -43,7 +43,7 @@ const Contact = () => {
   const socialLinks = [
     { icon: Github, href: "https://github.com/kaouthar-el/", label: "GitHub" },
     { icon: Linkedin, href: "https://linkedin.com/in/elmansouri-kaouthar-56585b260", label: "LinkedIn" },
-    { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
+    { icon: Mail, href: "https://kaoutharelmansouri@gmail.com", label: "Email" },
   ];
 
   return (
