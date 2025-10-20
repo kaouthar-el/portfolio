@@ -6,7 +6,7 @@ Bienvenue sur mon **portfolio personnel**, un espace où je partage mes projets,
 
 ## 👩‍💻 À propos de moi
 
-Développeuse web & mobile passionnée, diplômée en **Développement Informatique (Bac+2)**, avec **1 an d’expérience** chez **Jbel Nour**.  
+Développeuse web & mobile passionnée, diplômée en **Développement Informatique **, avec **1 an d’expérience** chez **Jbel Nour**.  
 J’ai eu l’occasion de créer plusieurs applications web et mobiles modernes en utilisant des technologies telles que :
 
 - ⚛️ **React**
